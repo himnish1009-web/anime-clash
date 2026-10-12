@@ -1,8 +1,8 @@
 import { useEffect, useRef, useState } from 'react'
 import Portrait from './Portrait.jsx'
-import { CHARACTERS } from '../game/characters.js'
-import { createNetClient, NET_STATE } from '../game/net.js'
-import { sfx, unlockAudio } from '../game/audio.js'
+import { CHARACTERS } from './characters.js'
+import { createNetClient, NET_STATE } from './net.js'
+import { sfx, unlockAudio } from './audio.js'
 
 /**
  * Online flow: connect → queue → blind character select → hand off to Battle

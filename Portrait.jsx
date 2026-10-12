@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react'
-import { drawFighter } from '../game/render.js'
+import { drawFighter } from './render.js'
 
 /**
  * Renders a single fighter in their idle stance using the exact same

@@ -14,8 +14,7 @@ import { fileURLToPath } from 'node:url'
 import { WebSocketServer } from 'ws'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
-const ROOT = path.resolve(__dirname, '..')
-const DIST = path.join(ROOT, 'dist')
+const DIST = path.join(__dirname, 'dist')
 const PORT = process.env.PORT || 8787
 
 const MIME = {

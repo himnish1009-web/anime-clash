@@ -13,8 +13,8 @@
     "test:online": "node tests/online.test.mjs",
     "test:browser": "node tests/browser-check.mjs",
     "test:all": "npm run test && npm run test:dom && npm run test:online",
-    "server": "node server/server.js",
-    "start": "node server/server.js"
+    "server": "node server.js",
+    "start": "node server.js"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.3.3",

@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import Portrait from './Portrait.jsx'
-import { CHARACTERS, byId } from '../game/characters.js'
-import { sfx, unlockAudio } from '../game/audio.js'
+import { CHARACTERS, byId } from './characters.js'
+import { sfx, unlockAudio } from './audio.js'
 
 const DIFFS = [
   { id: 'easy', label: 'ROOKIE', desc: 'Slow reactions, forgiving spacing' },

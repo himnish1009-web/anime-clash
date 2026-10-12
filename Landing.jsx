@@ -2,8 +2,8 @@ import { useState } from 'react'
 import Logo from './Logo.jsx'
 import Portrait from './Portrait.jsx'
 import Reveal from './Reveal.jsx'
-import { CHARACTERS, byId } from '../game/characters.js'
-import { sfx, unlockAudio } from '../game/audio.js'
+import { CHARACTERS, byId } from './characters.js'
+import { sfx, unlockAudio } from './audio.js'
 
 const MODES = [
   {

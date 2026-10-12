@@ -1,8 +1,8 @@
 import { useCallback, useEffect, useState } from 'react'
-import Landing from './components/Landing.jsx'
-import Select from './components/Select.jsx'
-import OnlineLobby from './components/OnlineLobby.jsx'
-import Battle from './components/Battle.jsx'
+import Landing from './Landing.jsx'
+import Select from './Select.jsx'
+import OnlineLobby from './OnlineLobby.jsx'
+import Battle from './Battle.jsx'
 
 /**
  * Tiny screen router — no dependencies, just state.
