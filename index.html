@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#05060d" />
+    <meta
+      name="description"
+      content="Anime Clash — a free browser fighting game with an anime roster, local 2-player versus, CPU training and real-time online PvP on lockstep netcode."
+    />
+    <title>Anime Clash — Browser Anime Fighting Game</title>
+    <style>
+      html { background: #05060d; }
+      #boot {
+        position: fixed; inset: 0; display: flex; align-items: center; justify-content: center;
+        font-family: system-ui, sans-serif; color: #ff2e88; letter-spacing: .3em; font-size: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <div id="boot">LOADING ARENA…</div>
+    <script type="module" src="/src/main.jsx"></script>
+    <script>
+      // remove the boot splash as soon as React has mounted
+      new MutationObserver((_, o) => {
+        if (document.getElementById('root').childElementCount) {
+          document.getElementById('boot')?.remove()
+          o.disconnect()
+        }
+      }).observe(document.getElementById('root'), { childList: true })
+    </script>
+  </body>
+</html>
